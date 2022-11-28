@@ -1,0 +1,74 @@
+site_name: Hypnosis Technical Documentation
+theme:
+  name: material
+  custom_dir: docs/assets/overrides
+  palette:
+    scheme: default
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs           # Top-level pages are shown as tabs on the header
+    - navigation.tabs.sticky    # Navigation tabs are always visible
+    - navigation.top            # "Back to top" button appears upon upward scrolling
+    - navigation.indexes        # Allow section headers to have a page (see tech/index.md)
+    - navigation.expand         # Have all sections of the TOC expand by default
+    - content.tabs.link
+markdown_extensions:
+  - admonition                  # Info boxes (in different colors)
+  - pymdownx.details            # "
+  - pymdownx.superfences        # Info boxes, tabs
+  - pymdownx.caret              # Allow superscript and insertion marks (^ and ^^)
+  - pymdownx.tilde              # Allow subscript and deletion marks (~ and ~~)
+  - pymdownx.keys               # Allow Keyboard marks (++)
+  - pymdownx.mark               # Allow selection marks (==)
+  - pymdownx.inlinehilite       # Syntax-highlight inline code
+  - pymdownx.tabbed:            # Tabbed content
+      alternate_style: true
+  - toc:                        # TOC control
+      permalink: "#"            # Add permalinks to headers
+  - pymdownx.arithmatex:        # Math blocks
+      generic: true
+  - attr_list                   # { Annotations }
+  - md_in_html                  # Markdown inside HTML
+  - def_list                    # Definition lists (Glossary)
+plugins:
+  - search                      # Search box at the top
+  - git-revision-date           # Last edit timestamp at the bottom
+  - autolinks                   # Use just filenames instead of full or relative paths
+
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - assets/javascripts/images.js
+  - assets/javascripts/links.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra:
+  social:
+    - icon: fontawesome/solid/house
+      link: https://homepage
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/hypnosischain
+    - icon: fontawesome/brands/github
+      link: https://github.com/hypnosisfoundation
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg
+  analytics:
+    provider: google
+    property: G-3WZ2CSGYV1
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+copyright: Copyright &copy; 2019 - 2022 Hypnosis Foundation. <a href="#__consent">Cookie settings</a>.
+repo_url: https://github.com/hypnosisfoundation/documentation
+edit_uri: edit/main/docs/
+nav:
+  - Home:
+    - index.md
+  - Concepts:
+    - concepts/index.md
