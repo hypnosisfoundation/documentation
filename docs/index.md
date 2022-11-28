@@ -16,4 +16,4 @@ These are the main sections:
 
     These pages are a **Work In Progress**.
 
-    Join the Meridian community on [Discord](https://discord.gg/) if there is anything you cannot find here.
+    Join the Hypnosis community on [Discord](https://discord.gg/) if there is anything you cannot find here.
