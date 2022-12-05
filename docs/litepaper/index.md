@@ -48,6 +48,11 @@ The golang implementation of Hypnosis integrates a fully EVM-compatible executio
 
 ### Instant block-finality
 
+Through the use of the IBFT consensus, the Hypnosis blockchain can serve instant finalities for blocks produced and validated by our validator nodes.
+The use of IBFT helps validating the chain and generating higher throughput. The definition of IBFT can be found at the [EIP-650](https://github.com/ethereum/EIPs/issues/650) proposal. 
+
+> Note: IBFT is still in development and will be released on a seperate testnet
+
 ### Cross-chain capable
 
 ### Side-chain capable
