@@ -102,8 +102,8 @@ In order to keep our gasprices at its minimum, we have developed and integrated 
 pie
     title Token allocation
     "placeholder" : 386
-    "placeholder" : 85
-    "placeholder" : 150 
+    "placeholder2" : 85
+    "placeholder3" : 150 
 ```
 
 ## Public Audits
