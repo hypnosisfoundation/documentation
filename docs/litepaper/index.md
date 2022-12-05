@@ -98,6 +98,14 @@ In order to keep our gasprices at its minimum, we have developed and integrated 
 
 ## Tokenomics
 
+```mermaid
+pie
+    title Token allocation
+    "placeholder" : 386
+    "placeholder" : 85
+    "placeholder" : 150 
+```
+
 ## Public Audits
 
 ## Team
