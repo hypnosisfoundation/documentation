@@ -28,11 +28,16 @@ We are adressing this difficulty by integrating an optimistic rollup engine as d
 
 #### Centralization
 
+Usually shady projects tend to centralize their power over the network which includes treasury management, governance and more. At Hypnosis Foundation, we focus heavily on community governed upgrades and community based integrity.
+
 #### Transparency
+
 
 #### Regulatory Compliance
 
 #### Speed and Scalability
+
+Speed and Scalability is are essential for a web3 ready blockchain. With IBFT, Hypnosis Pendulum and on-chain Sharding we maximize the performance of hypnosis mainnet to approximately 100'000 transactions per seconds (TPS). 
 
 #### On-chain and Off-chain Security
 
