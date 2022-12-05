@@ -15,6 +15,7 @@ In current existing decentralized platforms we oftenly see problems such as un-a
 
 #### Un-affordable gasprices
 
+
 #### Centralization
 
 #### Transparency
@@ -39,7 +40,11 @@ In current existing decentralized platforms we oftenly see problems such as un-a
 
 ## What makes us different than the competitors
 
+Below are some features that make Hypnosis unique among market-competitors.
+
 ### Fully compatible with EVM
+
+The golang implementation of Hypnosis integrates a fully EVM-compatible execution and validation environment. The EVM (Ethereum Virtual Machine) is a turing-complete execution vm for smart-contracts and transactions that integrate with on-chain data. Any solidity-based smart-contract can be executed on Hypnosis without any difficulties. Additionally developers can integrate existing development tools such as Remix IDE and Hardhat into their Hypnosis dApps. 
 
 ### Instant block-finality
 
@@ -57,9 +62,9 @@ In current existing decentralized platforms we oftenly see problems such as un-a
 
 ### Regulatory Compliance
 
-
-
 ## Tokenomics
+
+## Public Audits
 
 ## Team
 
