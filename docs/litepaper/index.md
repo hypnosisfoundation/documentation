@@ -32,6 +32,7 @@ Usually shady projects tend to centralize their power over the network which inc
 
 #### Transparency
 
+All source-codes of the Hypnosis Foundations are published open-source under. This means the code and all smart-contracts can be viewed publicly. However, we have proteced our code from intellectual-property thefts. Hypnosis is released under the terms of the GNU General Public License v3.0.
 
 #### Regulatory Compliance
 
@@ -41,9 +42,13 @@ Speed and Scalability is are essential for a web3 ready blockchain. With IBFT, H
 
 #### On-chain and Off-chain Security
 
+Security and Audits are fundamentally for a trusted environment. We strive to continiously audit our official smart-contracts. We are currently working closely with industry-leaders such as Hacken, Chainsecurity and CertiK. Exploits and Vulnerabilities should be communicated over our issue tracker on github. 
+
+> Note: We are currently working on a bug bounty platform. We will announce it as soon as we have tested it.
+
 #### Energy-consumption
 
-### Comparison across the Market
+## Comparison across the Market
 
 ## Consensi Mechanisms
 
