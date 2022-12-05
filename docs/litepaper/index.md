@@ -42,7 +42,7 @@ Speed and Scalability is are essential for a web3 ready blockchain. With IBFT, H
 
 #### On-chain and Off-chain Security
 
-Security and Audits are fundamentally for a trusted environment. We strive to continiously audit our official smart-contracts. We are currently working closely with industry-leaders such as Hacken, Chainsecurity and CertiK. Exploits and Vulnerabilities should be communicated over our issue tracker on github. 
+Security and Audits are fundamentally for a trusted environment. We strive to continiously audit our official smart-contracts. We are currently working closely with industry-leaders such as Hacken, Chainsecurity and CertiK. Exploits and Vulnerabilities should be communicated over our issue tracker on github. Our official JSON-RPC API's are protected through an internal SSL and a JSON-Request Token. All of our Layer 2 Products inherit the security of the Layer 0 and 1 mainnnet. Validators are required to fulfill certain security measures. Wallet and Transaction-Adresses that do not behave correctly can be blacklisted through a governance proposal. 
 
 > Note: We are currently working on a bug bounty platform. We will announce it as soon as we have tested it.
 
