@@ -15,6 +15,16 @@ In current existing decentralized platforms we oftenly see problems such as un-a
 
 #### Un-affordable gasprices
 
+In an EVM based chain, gasprices are calculated through the following formula (post london hardfork): 
+
+```math
+gaslimit * (basefee+ tips) = gasprice
+```
+
+The parameter **gaslimit** depends on the complexity of a transaction. The result **gasprice** depends on the user-based demand and on the value of the native Token. 
+Commonly the gasprices increase when either the demand in a network increases or if the value of the native token rises.
+
+We are adressing this difficulty by integrating an optimistic rollup engine as described in the following sections.
 
 #### Centralization
 
