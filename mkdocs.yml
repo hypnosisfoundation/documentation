@@ -70,5 +70,7 @@ edit_uri: edit/main/docs/
 nav:
   - Home:
     - index.md
+  - Litepaper:
+    - litepaper/index.md
   - Concepts:
     - concepts/index.md
