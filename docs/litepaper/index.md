@@ -37,6 +37,8 @@ In current existing decentralized platforms we oftenly see problems such as un-a
 
 ### Proof-Of-Identity (PoI)
 
+## What makes us different than the competitors
+
 
 ## Tokenomics
 
