@@ -53,7 +53,7 @@ Speed and Scalability is are essential for a web3 ready blockchain. With IBFT, H
 
 ### Proof-Of-Identity (PoI)
 
-## What makes us different than the competitors
+## What makes us different from the competitors
 
 Below are some features that make Hypnosis unique among market-competitors.
 
