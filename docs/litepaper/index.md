@@ -71,7 +71,7 @@ All signatures that are signed by the internal Hypnosis-Signer are encoded using
 
 ### Integrated rollup engine
 
-In order to keep our gasprices at its minimup, we have developed and integrated an own optimistic rollup-engine that operates via an on-chain oracle. With our optimistic rollup engine we can achieve:
+In order to keep our gasprices at its minimum, we have developed and integrated an own optimistic rollup-engine that operates via an on-chain oracle. With our optimistic rollup engine we can achieve:
 
 - 10-100 times more TPS than on our base-layer
 - Wrapped transactions leading in a reduction of gasprice
