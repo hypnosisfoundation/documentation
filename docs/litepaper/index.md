@@ -48,6 +48,8 @@ Security and Audits are fundamentally for a trusted environment. We strive to co
 
 #### Energy-consumption
 
+Running conventional PoW nodes can be very energy-inefficient and requires high computing-power. With our dPoS/IBFT consensus the Hypnosis blockchain operates with minimal system requirements and is Co2-neutral. 
+
 ## Comparison across the Market
 
 ## Consensi Mechanisms
@@ -57,6 +59,7 @@ Security and Audits are fundamentally for a trusted environment. We strive to co
 ### Istanbul Byzantinian Fault-Tolerance (IBFT)
 
 ### Proof-Of-Identity (PoI)
+
 
 ## What makes us different from the competitors
 
