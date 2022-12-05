@@ -39,6 +39,25 @@ In current existing decentralized platforms we oftenly see problems such as un-a
 
 ## What makes us different than the competitors
 
+### Fully compatible with EVM
+
+### Instant block-finality
+
+### Cross-chain capable
+
+### Side-chain capable
+
+### dPoS algorithm
+
+### EU-Compliant ECDSA 
+
+### Integrated rollup engine
+
+### PoI-Powered DID's (Decentralized Identities)
+
+### Regulatory Compliance
+
+
 
 ## Tokenomics
 
