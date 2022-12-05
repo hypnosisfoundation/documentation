@@ -55,6 +55,8 @@ The use of IBFT helps validating the chain and generating higher throughput. The
 
 ### Cross-chain capable
 
+Cross-chain communications are very important when dealing with DeFI (especially swaps, lending/burrowing). With Hypnosis Pendulum we are building a Layer-2 DeFi solution that includes a cross-chain bridge. With Pendulum enabled DeFi users are able to communicate with several Layer-0/1 blockchains such as Cosmos, Polkadot, Binance, Polygon and more.
+
 ### Side-chain capable
 
 ### dPoS algorithm
