@@ -109,9 +109,11 @@ In order to keep our gasprices at its minimum, we have developed and integrated 
 ```mermaid
 pie
     title Token allocation
-    "placeholder" : 386
-    "placeholder2" : 85
-    "placeholder3" : 150 
+    "Ecosystem/Validators/Rewarding" : 45%
+    "Token Sale" : 25%
+    "Marketing/Advisors" : 10%
+    "Emergency Treasury" : 10%
+    "Team and Development" : 10%
 ```
 
 ## Public Audits
