@@ -59,7 +59,11 @@ Cross-chain communications are very important when dealing with DeFI (especially
 
 ### Side-chain capable
 
+Hypnosis is adaptive by design. This means that user can serve service-critical dApps on custom tailored sidechains that run parallely to the Hypnosis-Mainnet. Sidechains are highly customizable and modular. In the Polkadot Ecosystem this feature is known as a parachain.
+
 ### dPoS algorithm
+
+Hypnosis is powered by a custom dPoS algorithm. Generally, dPoS is more performant than PoS and PoW based ledgers. If you want to dig in deeper, you can find a [detailed description](https://www.geeksforgeeks.org/delegated-proof-of-stake/) on how dPoS works in depth.
 
 ### EU-Compliant ECDSA 
 
