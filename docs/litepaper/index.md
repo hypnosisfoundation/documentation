@@ -67,7 +67,15 @@ Hypnosis is powered by a custom dPoS algorithm. Generally, dPoS is more performa
 
 ### EU-Compliant ECDSA 
 
+All signatures that are signed by the internal Hypnosis-Signer are encoded using the EU-Compliant ECDSA signature algorithm. 
+
 ### Integrated rollup engine
+
+In order to keep our gasprices at its minimup, we have developed and integrated an own optimistic rollup-engine that operates via an on-chain oracle. With our optimistic rollup engine we can achieve:
+
+- 10-100 times more TPS than on our base-layer
+- Wrapped transactions leading in a reduction of gasprice
+- Operations on L2 are directly validated and integrated on the mainnet   
 
 ### PoI-Powered DID's (Decentralized Identities)
 
