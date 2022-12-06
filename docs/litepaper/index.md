@@ -34,8 +34,6 @@ Usually shady projects tend to centralize their power over the network which inc
 
 All source-codes of the Hypnosis Foundations are published open-source under. This means the code and all smart-contracts can be viewed publicly. However, we have proteced our code from intellectual-property thefts. Hypnosis is released under the terms of the GNU General Public License v3.0.
 
-#### Regulatory Compliance
-
 #### Speed and Scalability
 
 Speed and Scalability is are essential for a web3 ready blockchain. With IBFT, Hypnosis Pendulum and on-chain Sharding we maximize the performance of hypnosis mainnet to approximately 100'000 transactions per seconds (TPS). 
@@ -62,9 +60,13 @@ Running conventional PoW nodes can be very energy-inefficient and requires high 
 
 ## Consensi Mechanisms
 
+In the following section we will cover the main algorithms used to achieve consensus on Hypnosis. 
+
 ### Delegated Proof-Of-Stake (dPoS)
 
+
 ### Istanbul Byzantinian Fault-Tolerance (IBFT)
+
 
 ### Proof-Of-Identity (PoI)
 
