@@ -52,6 +52,14 @@ Running conventional PoW nodes can be very energy-inefficient and requires high 
 
 ## Comparison across the Market
 
+|          | TPS      | Transaction Fee | Tx Finality | Consensus | Governance | Smart-Contracts |
+|----------|----------|-----------------|-------------|-----------|------------|-----------------|
+| Ethereum | 15-30    | ~15$                | 5mins   | PoS        | yes          | yes |
+| Cardano  | ~250    | ~0.02$                | 2mins   | Ouroboros PoS       | yes          |  yes |
+| Polkadot | 1000    | ~0.15$                | 30sec     | nPoS      | yes          | yes |
+| Tezos    | 40-50    | ~0.00232$                | 30sec  | PoS         | yes          | yes |
+| Hypnosis | +100'000    | ~0.00000000151$       | Instant | dPoS/IBFT          | yes          | yes|
+
 ## Consensi Mechanisms
 
 ### Delegated Proof-Of-Stake (dPoS)
