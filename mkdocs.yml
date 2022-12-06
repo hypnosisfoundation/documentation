@@ -48,8 +48,6 @@ extra:
   social:
     - icon: fontawesome/solid/house
       link: https://homepage
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/hypnosischain
     - icon: fontawesome/brands/github
       link: https://github.com/hypnosisfoundation
     - icon: fontawesome/brands/discord
