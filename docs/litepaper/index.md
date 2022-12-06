@@ -116,22 +116,35 @@ In order to keep our gasprices at its minimum, we have developed and integrated 
 
 ## Tokenomics
 
-```mermaid
-pie
-    title Token allocation
-    "Ecosystem/Validators/Rewarding" : 45
-    "Token Sale" : 25
-    "Marketing/Advisors" : 10
-    "Emergency Treasury" : 10
-    "Team and Development" : 10
-```
+The token distribution of the native HYPNO token is split as showed:
+
+- Ecosystem / Validators: 45%
+- Initial Token Sale: 25%
+- Marketing and Advisors: 10%
+- Emergency Treasury: 10%
+- Team and Development: 10%
+
+> Note: The Token Allocations may vary since this project is still in its planning. Every change that is made to the allocations will be publicated on this page and will be publicly verifiable on github.
+
 
 ## Public Audits
 
+> Work in progress
+
 ## Team
+
+### Timo Sarkar
+
+Timo Sarkar, 18 is the founder and core-developer of Hypnosis. He started the project with an initial idea of an ideological scalable blockchain in 2019. Additionally he founded the Hypnosis Foundation which acts as a DAO and strives to be fully regulatory compliant (CH-EU).
 
 ## Vision and Roadmap
 
+> Work in progress
+
 ## Contact
 
+You can reach the Hypnosis Foundation at: support.hypnosis@protonmail.com for any general inquiry.
+
 ## Further readings
+
+> Work in progress
