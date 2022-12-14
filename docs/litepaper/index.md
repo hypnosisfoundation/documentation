@@ -135,7 +135,7 @@ The token distribution of the native HYPNO token is split as showed:
 
 ### Timo Sarkar
 
-Timo Sarkar, 18 is the founder and core-developer of Hypnosis. He started the project with an initial idea of an ideological scalable blockchain in 2019. Additionally he founded the Hypnosis Foundation which acts as a DAO and strives to be fully regulatory compliant (CH-EU).
+Timo Sarkar, 18 is the founder and core-developer of Hypnosis. He started the project with an initial idea of an ideological scalable blockchain in 2019. He eventually started to think of a layer 0/1 protocol that could power web3 infrastructure by forming a fog-computing architecture. To thid day, Hypnosis is a decentralized fog-computing network with smart-contracts and sharding capabilities. Additionally he founded the Hypnosis Foundation which acts as a DAO and strives to be fully regulatory compliant (CH-EU).
 
 ## Vision and Roadmap
 
