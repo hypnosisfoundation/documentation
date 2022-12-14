@@ -1,0 +1,1033 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.4.0">
+    
+    
+      
+        <title>Hypnosis Litepaper - Hypnosis Technical Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.69437709.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-3WZ2CSGYV1"),document.addEventListener("DOMContentLoaded",function(){if(document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document.forms.feedback){var e,a=document.forms.feedback;for(e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}"undefined"!=typeof location$&&location$.subscribe(function(e){n("config","G-3WZ2CSGYV1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-3WZ2CSGYV1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+    
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hypnosis-litepaper" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Hypnosis Technical Documentation" class="md-header__button md-logo" aria-label="Hypnosis Technical Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hypnosis Technical Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Hypnosis Litepaper
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hypnosisfoundation/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Litepaper
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../concepts/" class="md-tabs__link">
+        Concepts
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hypnosis Technical Documentation" class="md-nav__button md-logo" aria-label="Hypnosis Technical Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Hypnosis Technical Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hypnosisfoundation/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="..">Home</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Litepaper</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Litepaper" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Litepaper
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../concepts/">Concepts</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Concepts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Concepts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    Use cases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    Problems
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#un-affordable-gasprices" class="md-nav__link">
+    Un-affordable gasprices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#centralization" class="md-nav__link">
+    Centralization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparency" class="md-nav__link">
+    Transparency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speed-and-scalability" class="md-nav__link">
+    Speed and Scalability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-chain-and-off-chain-security" class="md-nav__link">
+    On-chain and Off-chain Security
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-consumption" class="md-nav__link">
+    Energy-consumption
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-across-the-market" class="md-nav__link">
+    Comparison across the Market
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensi-mechanisms" class="md-nav__link">
+    Consensi Mechanisms
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensi Mechanisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#delegated-proof-of-stake-dpos" class="md-nav__link">
+    Delegated Proof-Of-Stake (dPoS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istanbul-byzantinian-fault-tolerance-ibft" class="md-nav__link">
+    Istanbul Byzantinian Fault-Tolerance (IBFT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-of-identity-poi" class="md-nav__link">
+    Proof-Of-Identity (PoI)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-makes-us-different-from-the-competitors" class="md-nav__link">
+    What makes us different from the competitors
+  </a>
+  
+    <nav class="md-nav" aria-label="What makes us different from the competitors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fully-compatible-with-evm" class="md-nav__link">
+    Fully compatible with EVM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instant-block-finality" class="md-nav__link">
+    Instant block-finality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-chain-capable" class="md-nav__link">
+    Cross-chain capable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-chain-capable" class="md-nav__link">
+    Side-chain capable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dpos-algorithm" class="md-nav__link">
+    dPoS algorithm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eu-compliant-ecdsa" class="md-nav__link">
+    EU-Compliant ECDSA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-rollup-engine" class="md-nav__link">
+    Integrated rollup engine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poi-powered-dids-decentralized-identities" class="md-nav__link">
+    PoI-Powered DID's (Decentralized Identities)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regulatory-compliance" class="md-nav__link">
+    Regulatory Compliance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokenomics" class="md-nav__link">
+    Tokenomics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-audits" class="md-nav__link">
+    Public Audits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    Team
+  </a>
+  
+    <nav class="md-nav" aria-label="Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timo-sarkar" class="md-nav__link">
+    Timo Sarkar
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-and-roadmap" class="md-nav__link">
+    Vision and Roadmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    Contact
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-readings" class="md-nav__link">
+    Further readings
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/hypnosisfoundation/documentation/edit/main/docs/litepaper/index.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="hypnosis-litepaper">Hypnosis Litepaper<a class="headerlink" href="#hypnosis-litepaper" title="Permanent link">#</a></h1>
+<h2 id="abstract">Abstract<a class="headerlink" href="#abstract" title="Permanent link">#</a></h2>
+<p>At Hypnosis Foundation, we develop and innovate a new decentralized fog computing network based on the EVM technology. Our aim with Hypnosis is to launch a lightspeed, adaptive and trusted fog-computing environment that is affordable to use and ready for the web3 mass-adoption.</p>
+<h2 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">#</a></h2>
+<p>The Hypnosis platform is intended to be used as an underlying Layer 0 blockchain that is primarily intended as a decentralized fog-computing network but may also power DeFi Services, GameFi, Metaverse, Web3.0 Services, Stablecoin economics and many more. </p>
+<h2 id="problems">Problems<a class="headerlink" href="#problems" title="Permanent link">#</a></h2>
+<p>In current existing decentralized platforms we oftenly see problems such as un-affordable gasprices, centralization, non-transparent projects following rugpulls and other scams, regulatory compliance, speed, scalability, security breaches and many more. In the following section we will describe how we adress each of the most vibrant difficulties in the blockchain industry.</p>
+<h4 id="un-affordable-gasprices">Un-affordable gasprices<a class="headerlink" href="#un-affordable-gasprices" title="Permanent link">#</a></h4>
+<p>In an EVM based chain, gasprices are calculated through the following formula (post london hardfork): </p>
+<div class="highlight"><pre><span></span><code>gaslimit * (basefee + tips) = gasprice
+</code></pre></div>
+<p>The parameter <strong>gaslimit</strong> depends on the complexity of a transaction. The result <strong>gasprice</strong> depends on the user-based demand and on the value of the native Token. 
+Commonly the gasprices increase when either the demand in a network increases or if the value of the native token rises.</p>
+<p>We are adressing this difficulty by integrating an optimistic rollup engine as described in the following sections.</p>
+<h4 id="centralization">Centralization<a class="headerlink" href="#centralization" title="Permanent link">#</a></h4>
+<p>Usually shady projects tend to centralize their power over the network which includes treasury management, governance and more. At Hypnosis Foundation, we focus heavily on community governed upgrades and community based integrity.</p>
+<h4 id="transparency">Transparency<a class="headerlink" href="#transparency" title="Permanent link">#</a></h4>
+<p>All source-codes of the Hypnosis Foundations are published open-source under. This means the code and all smart-contracts can be viewed publicly. However, we have proteced our code from intellectual-property thefts. Hypnosis is released under the terms of the GNU General Public License v3.0.</p>
+<h4 id="speed-and-scalability">Speed and Scalability<a class="headerlink" href="#speed-and-scalability" title="Permanent link">#</a></h4>
+<p>Speed and Scalability is are essential for a web3 ready blockchain. With IBFT, Hypnosis Pendulum and on-chain Sharding we maximize the performance of hypnosis mainnet to approximately 100'000 transactions per seconds (TPS). </p>
+<h4 id="on-chain-and-off-chain-security">On-chain and Off-chain Security<a class="headerlink" href="#on-chain-and-off-chain-security" title="Permanent link">#</a></h4>
+<p>Security and Audits are fundamentally for a trusted environment. We strive to continiously audit our official smart-contracts. We are currently working closely with industry-leaders such as Hacken, Chainsecurity and CertiK. Exploits and Vulnerabilities should be communicated over our issue tracker on github. Our official JSON-RPC API's are protected through an internal SSL and a JSON-Request Token. All of our Layer 2 Products inherit the security of the Layer 0 and 1 mainnnet. Validators are required to fulfill certain security measures. Wallet and Transaction-Adresses that do not behave correctly can be blacklisted through a governance proposal. </p>
+<blockquote>
+<p>Note: We are currently working on a bug bounty platform. We will announce it as soon as we have tested it.</p>
+</blockquote>
+<h4 id="energy-consumption">Energy-consumption<a class="headerlink" href="#energy-consumption" title="Permanent link">#</a></h4>
+<p>Running conventional PoW nodes can be very energy-inefficient and requires high computing-power. With our dPoS/IBFT consensus the Hypnosis blockchain operates with minimal system requirements and is Co2-neutral. </p>
+<h2 id="comparison-across-the-market">Comparison across the Market<a class="headerlink" href="#comparison-across-the-market" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>TPS</th>
+<th>Transaction Fee</th>
+<th>Tx Finality</th>
+<th>Consensus</th>
+<th>Governance</th>
+<th>Smart-Contracts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ethereum</td>
+<td>15-30</td>
+<td>~15$</td>
+<td>5mins</td>
+<td>PoS</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Cardano</td>
+<td>~250</td>
+<td>~0.02$</td>
+<td>2mins</td>
+<td>Ouroboros PoS</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Polkadot</td>
+<td>1000</td>
+<td>~0.15$</td>
+<td>30sec</td>
+<td>nPoS</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Tezos</td>
+<td>40-50</td>
+<td>~0.00232$</td>
+<td>30sec</td>
+<td>PoS</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hypnosis</td>
+<td>+100'000</td>
+<td>~0.00000000151$</td>
+<td>Instant</td>
+<td>dPoS/IBFT</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="consensi-mechanisms">Consensi Mechanisms<a class="headerlink" href="#consensi-mechanisms" title="Permanent link">#</a></h2>
+<p>In the following section we will cover the main algorithms used to achieve consensus on Hypnosis. </p>
+<h3 id="delegated-proof-of-stake-dpos">Delegated Proof-Of-Stake (dPoS)<a class="headerlink" href="#delegated-proof-of-stake-dpos" title="Permanent link">#</a></h3>
+<h3 id="istanbul-byzantinian-fault-tolerance-ibft">Istanbul Byzantinian Fault-Tolerance (IBFT)<a class="headerlink" href="#istanbul-byzantinian-fault-tolerance-ibft" title="Permanent link">#</a></h3>
+<h3 id="proof-of-identity-poi">Proof-Of-Identity (PoI)<a class="headerlink" href="#proof-of-identity-poi" title="Permanent link">#</a></h3>
+<h2 id="what-makes-us-different-from-the-competitors">What makes us different from the competitors<a class="headerlink" href="#what-makes-us-different-from-the-competitors" title="Permanent link">#</a></h2>
+<p>Below are some features that make Hypnosis unique among market-competitors.</p>
+<h3 id="fully-compatible-with-evm">Fully compatible with EVM<a class="headerlink" href="#fully-compatible-with-evm" title="Permanent link">#</a></h3>
+<p>The golang implementation of Hypnosis integrates a fully EVM-compatible execution and validation environment. The EVM (Ethereum Virtual Machine) is a turing-complete execution vm for smart-contracts and transactions that integrate with on-chain data. Any solidity-based smart-contract can be executed on Hypnosis without any difficulties. Additionally developers can integrate existing development tools such as Remix IDE and Hardhat into their Hypnosis dApps. </p>
+<h3 id="instant-block-finality">Instant block-finality<a class="headerlink" href="#instant-block-finality" title="Permanent link">#</a></h3>
+<p>Through the use of the IBFT consensus, the Hypnosis blockchain can serve instant finalities for blocks produced and validated by our validator nodes.
+The use of IBFT helps validating the chain and generating higher throughput. The definition of IBFT can be found at the <a href="https://github.com/ethereum/EIPs/issues/650">EIP-650</a> proposal. </p>
+<blockquote>
+<p>Note: IBFT is still in development and will be released on a seperate testnet</p>
+</blockquote>
+<h3 id="cross-chain-capable">Cross-chain capable<a class="headerlink" href="#cross-chain-capable" title="Permanent link">#</a></h3>
+<p>Cross-chain communications are very important when dealing with DeFI (especially swaps, lending/burrowing). With Hypnosis Pendulum we are building a Layer-2 DeFi solution that includes a cross-chain bridge. With Pendulum enabled DeFi users are able to communicate with several Layer-0/1 blockchains such as Cosmos, Polkadot, Binance, Polygon and more.</p>
+<h3 id="side-chain-capable">Side-chain capable<a class="headerlink" href="#side-chain-capable" title="Permanent link">#</a></h3>
+<p>Hypnosis is adaptive by design. This means that user can serve service-critical dApps on custom tailored sidechains that run parallely to the Hypnosis-Mainnet. Sidechains are highly customizable and modular. In the Polkadot Ecosystem this feature is known as a parachain.</p>
+<h3 id="dpos-algorithm">dPoS algorithm<a class="headerlink" href="#dpos-algorithm" title="Permanent link">#</a></h3>
+<p>Hypnosis is powered by a custom dPoS algorithm. Generally, dPoS is more performant than PoS and PoW based ledgers. If you want to dig in deeper, you can find a <a href="https://www.geeksforgeeks.org/delegated-proof-of-stake/">detailed description</a> on how dPoS works in depth.</p>
+<h3 id="eu-compliant-ecdsa">EU-Compliant ECDSA<a class="headerlink" href="#eu-compliant-ecdsa" title="Permanent link">#</a></h3>
+<p>All signatures that are signed by the internal Hypnosis-Signer are encoded using the EU-Compliant ECDSA signature algorithm. </p>
+<h3 id="integrated-rollup-engine">Integrated rollup engine<a class="headerlink" href="#integrated-rollup-engine" title="Permanent link">#</a></h3>
+<p>In order to keep our gasprices at its minimum, we have developed and integrated an own optimistic rollup-engine that operates via an on-chain oracle. With our optimistic rollup engine we can achieve:</p>
+<ul>
+<li>10-100 times more TPS than on our base-layer</li>
+<li>Wrapped transactions leading in a reduction of gasprice</li>
+<li>Operations on L2 are directly validated and integrated on the mainnet   </li>
+</ul>
+<h3 id="poi-powered-dids-decentralized-identities">PoI-Powered DID's (Decentralized Identities)<a class="headerlink" href="#poi-powered-dids-decentralized-identities" title="Permanent link">#</a></h3>
+<h3 id="regulatory-compliance">Regulatory Compliance<a class="headerlink" href="#regulatory-compliance" title="Permanent link">#</a></h3>
+<h2 id="tokenomics">Tokenomics<a class="headerlink" href="#tokenomics" title="Permanent link">#</a></h2>
+<p>The token distribution of the native HYPNO token is split as showed:</p>
+<ul>
+<li>Ecosystem / Validators: 45%</li>
+<li>Initial Token Sale: 25%</li>
+<li>Marketing and Advisors: 10%</li>
+<li>Emergency Treasury: 10%</li>
+<li>Team and Development: 10%</li>
+</ul>
+<blockquote>
+<p>Note: The Token Allocations may vary since this project is still in its planning. Every change that is made to the allocations will be publicated on this page and will be publicly verifiable on github.</p>
+</blockquote>
+<h2 id="public-audits">Public Audits<a class="headerlink" href="#public-audits" title="Permanent link">#</a></h2>
+<blockquote>
+<p>Work in progress</p>
+</blockquote>
+<h2 id="team">Team<a class="headerlink" href="#team" title="Permanent link">#</a></h2>
+<h3 id="timo-sarkar">Timo Sarkar<a class="headerlink" href="#timo-sarkar" title="Permanent link">#</a></h3>
+<p>Timo Sarkar, 18 is the founder and core-developer of Hypnosis. He started the project with an initial idea of an ideological scalable blockchain in 2019. He eventually started to think of a layer 0/1 protocol that could power web3 infrastructure by forming a fog-computing architecture. To this day, Hypnosis is a decentralized fog-computing network with smart-contracts and sharding capabilities. Additionally he founded the Hypnosis Foundation which acts as a DAO and strives to be fully regulatory compliant (CH-EU).</p>
+<h2 id="vision-and-roadmap">Vision and Roadmap<a class="headerlink" href="#vision-and-roadmap" title="Permanent link">#</a></h2>
+<blockquote>
+<p>Work in progress</p>
+</blockquote>
+<h2 id="contact">Contact<a class="headerlink" href="#contact" title="Permanent link">#</a></h2>
+<p>You can reach the Hypnosis Foundation at: support.hypnosis@protonmail.com for any general inquiry.</p>
+<h2 id="further-readings">Further readings<a class="headerlink" href="#further-readings" title="Permanent link">#</a></h2>
+<blockquote>
+<p>Work in progress</p>
+</blockquote>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-12-14
+    
+  </small>
+</div>
+
+
+  
+
+
+
+              
+            </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2019 - 2022 Hypnosis Foundation. <a href="#__consent">Cookie settings</a>.
+      <a
+        href="https://github.com/hypnosisfoundation/go-hypnosis"
+        target="_blank" rel="noopener"
+      >
+        Terms of Service</a>.
+    </div>
+  
+  
+    Made with
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
+      Material for MkDocs
+    </a>
+  
+</div>
+
+      <!-- Social links -->
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://homepage" target="_blank" rel="noopener" title="homepage" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.1c0 2.8-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2-.9-3.3-.1-1.4-.8-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.09 0-40-17.9-40-40V360c0-.9.03-1.9.09-2.8v-69.6H32.05C14.02 287.6 0 273.5 0 255.5c0-9 3.004-17 10.01-24L266.4 8.016c7-7.014 15-8.016 22-8.016s15 2.004 21.1 7.014L564.8 231.5c8 7 12.1 15 11 24z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/hypnosisfoundation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://discord.gg" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input type="checkbox" class="md-toggle" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);console.log(new FormData(form)),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "navigation.expand", "content.tabs.link"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      
+        <script src="../assets/javascripts/mathjax.js"></script>
+      
+        <script src="../assets/javascripts/images.js"></script>
+      
+        <script src="../assets/javascripts/links.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
