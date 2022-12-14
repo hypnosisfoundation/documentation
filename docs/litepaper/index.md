@@ -2,11 +2,11 @@
 
 ## Abstract
 
-At Hypnosis Foundation, we develop and innovate a new decentralized smart-contract platform based on the EVM technology called Hypnosis. Our aim with Hypnosis is to launch a lightspeed, adaptive and interconnected blockchain that is ready for the web3 mass-adoption. 
+At Hypnosis Foundation, we develop and innovate a new decentralized fog computing network based on the EVM technology. Our aim with Hypnosis is to launch a lightspeed, adaptive and trusted fog-computing environment that is affordable to use and ready for the web3 mass-adoption.
 
 ## Use cases
 
-The Hypnosis platform is intended to be used as an underlying Layer 0 blockchain that may power DeFi Services, GameFi, Metaverse, Web3.0 Services, Stablecoin economics and many more. 
+The Hypnosis platform is intended to be used as an underlying Layer 0 blockchain that is primarily intended as a decentralized fog-computing network but may also power DeFi Services, GameFi, Metaverse, Web3.0 Services, Stablecoin economics and many more. 
 
 ## Problems
 
